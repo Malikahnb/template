@@ -866,6 +866,7 @@ span.price {
     color: #fff;
     font-size: 14px;
     background: #888888;
+    height: 40vh;
 }
 
 #footer .footer-top {
@@ -1586,40 +1587,14 @@ shop__sidebar {
     border-radius: 0;
 }
 
-.product__pagination {
-    padding-top: 25px;
-    text-align: center;
-}
-
-.product__pagination a {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    color: #111111;
-    height: 30px;
-    width: 30px;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    line-height: 30px;
-    text-align: center;
-}
-
-.product__pagination a.active {
+.page-item a.active {
     border-color: #111111;
 }
 
-.product__pagination a:hover {
+.page-item a:hover {
     border-color: #111111;
 }
 
-.product__pagination span {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    color: #111111;
-    padding-left: 10px;
-    padding-right: 15px;
-}
 
 /*---------------------
   Shop
@@ -2059,4 +2034,14 @@ shop__sidebar {
     background-color: #2c3432;
     color: #fff6ee;
     transition: 0.3s ease-in-out;
+}
+
+
+/*
+    СONTACT PAGE
+ */
+
+.bg-image.contact {
+    background: url("../img/banner.jpg");
+    height: 50vh;
 }
