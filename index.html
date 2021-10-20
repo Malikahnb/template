@@ -15,8 +15,10 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
     <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/uikit.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
@@ -31,16 +33,14 @@
 
 <body>
 <!-- ======= Header ======= -->
-<header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex justify-content-between align-items-center">
+<header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
 
-        <div class="logo">
-            <a href="index.html"><img src="assets/img/logot.png" alt="" class="img-fluid"></a>
-        </div>
+        <a href="index.html" class="logo"><img src="assets/img/logotip.png" alt="" class="img-fluid"></a>
 
-        <nav id="navbar" class="navbar">
+        <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
-                <li><a class="active " href="index.html">Главное</a></li>
+                <li><a class="active " href="#">Главное</a></li>
                 <li class="dropdown"><a href="#"><span>Люстры</span> <i class='bx bx-chevron-down'></i></a>
                     <ul>
                         <li><a href="#">Классические</a></li>
@@ -49,28 +49,52 @@
                         <li><a href="#">Модерн</a></li>
                         <li><a href="#">Лофт</a></li>
                         <li><a href="#">Марокканские</a></li>
+                        <!--                        dropdown-->
+                        <li><a>Галогенные</a></li>
                     </ul>
                 </li>
-                <li><a href="pricing.html">Обои</a></li>
+                <li><a href="#">Обои</a></li>
                 <li class="dropdown"><a href="#"><span>Стройматериалы</span> <i class='bx bx-chevron-down'></i></a>
                     <ul>
-                        <li><a href="#">Раковины</a></li>
-                        <li><a href="#">Трубы</a></li>
-                        <li><a href="#">Ванны</a></li>
-                        <li><a href="#">Другие</a></li>
+                        <li><a href="#">Сантехника</a></li>
+                        <li><a href="#">Двери</a></li>
+                        <li><a href="#">Полы</a></li>
+                        <li><a href="#">Строительное оборудование</a></li>
+                        <li><a href="#">Джакузи</a></li>
+                        <li><a href="#">Плитки</a></li>
+                        <li><a href="#">Черепицы</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="#">Контакты</a></li>
             </ul>
-            <i class='bx bx-menu-alt-right'></i>
-        </nav>
-        <!-- .navbar -->
-        <div class="header-social-links d-flex align-items-center">
-            <a href="#" class="twitter"><i class="bx bx-heart"></i></a>
-            <a href="#" class="instagram"><i class="bx bx-cart-alt"></i></a>
+            <i class='bx bx-menu-alt-right mobile-nav-toggle'></i>
+        </nav><!-- .navbar -->
+
+        <!--        <div class="header-social-links">-->
+        <div class="nav-overlay uk-navbar-right">
+            <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade"
+               href="#"></a>
         </div>
 
+        <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+            <div class="uk-navbar-item uk-width-expand">
+                <form class="uk-search uk-search-navbar uk-width-1-1">
+                    <input class="uk-search-input" type="search" placeholder="Search" autofocus>
+                </form>
+            </div>
+
+            <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade"
+               href="#"></a>
+        </div>
+        <span class="icons">
+        <a href="#" class="lang"><i class='bx bx-globe'></i></a>
+        <a href="#" class="wishlist"><i class='bx bx-heart'></i></a>
+        <a href="#" class="cart"><i class='bx bx-shopping-bag'></i></a>
+        </span>
     </div>
+
+    <!--    </div>-->
+
 </header><!-- End Header -->
 
 <!-- ======= Hero Section ======= -->
@@ -121,32 +145,32 @@
                 <p>Check The Categories</p>
             </div>
 
-            <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+            <div id="category-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
                 <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
                     <a href="#" class="item-wrap fancybox">
                         <div class="work-info">
                             <h3>Обои</h3>
-                            <span>Web</span>
+                            <!--                            <span>Web</span>-->
                         </div>
-                        <img class="img-fluid" src="assets/img/products/product5.jpg">
+                        <img class="img-fluid" src="assets/img/wall.jpg" alt="">
                     </a>
                 </div>
                 <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
                     <a href="#" class="item-wrap fancybox">
                         <div class="work-info">
                             <h3>Люстры</h3>
-                            <span>Photography</span>
+                            <!--                            <span>Photography</span>-->
                         </div>
-                        <img class="img-fluid" src="assets/img/products/product6.jpg">
+                        <img class="img-fluid" src="assets/img/products/product3.jpg" alt="">
                     </a>
                 </div>
                 <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
                     <a href="#" class="item-wrap fancybox">
                         <div class="work-info">
                             <h3>Стройматериалы</h3>
-                            <span>Branding</span>
+                            <!--                            <span>Branding</span>-->
                         </div>
-                        <img class="img-fluid" src="assets/img/products/product3.jpg">
+                        <img class="img-fluid" src="assets/img/remont.jpg" alt="">
                     </a>
                 </div>
 
@@ -154,44 +178,6 @@
         </div>
     </section><!-- End Categories Section -->
 
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-        <div class="container">
-
-            <div class="section-title">
-                <h2>Services</h2>
-                <p>Necessitatibus eius</p>
-            </div>
-
-            <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"
-                 data-aos="fade-left">
-                <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="icon"><i class="bx bx-fingerprint"></i></div>
-                    <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
-                        sint occaecati cupiditate non provident</p>
-                </div>
-
-                <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="icon"><i class="bx bx-gift"></i></div>
-                    <h4 class="title"><a href="">Nemo Enim</a></h4>
-                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                        praesentium voluptatum deleniti atque</p>
-                </div>
-
-                <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="icon"><i class="bx bx-atom"></i></div>
-                    <h4 class="title"><a href="">Dine Pad</a></h4>
-                    <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit.
-                        Sunt aut deserunt minus aut eligendi omnis</p>
-                </div>
-
-            </div>
-        </div>
-
-
-    </section><!-- End Services Section -->
 
     <!-- ======= products Section ======= -->
     <section id="products" class="products">
@@ -202,134 +188,218 @@
                 <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit</p>
             </div>
 
-            <div class="row" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="col-lg-3 col-md-5">
-                    <div class="product">
-                        <div class="product-img">
-                            <img src="assets/img/products/product2.jpg" alt="product 1" class="img-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-sm- d-flex align-items-stretch mb-4">
+                    <a href="#">
+                        <div class="card">
+                            <div class="card-img-overlay d-flex justify-content-end">
+                                <a href="#" class="card-link like">
+                                    <i class="bx bx-heart"></i>
+                                </a>
+                            </div>
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="card-img-top" src="assets/img/products/prod1.jpg" alt="Card image cap">
+                                <img class="uk-transition-scale-up uk-position-cover"
+                                     src="assets/img/products/prod1-2.jpg" alt="">
+                            </div>
+                            <div class="card-header bg-transparent border-bottom-0 float-left" style="width: 70%">
+                                <h5 class="card-title">Sit sint consectetur velit quisquam velit quisquam</h5>
+                            </div>
+                            <div class="card-body float-left">
+                                <p class="card-text">$460</p>
+                            </div>
+                            <div class="float-right">
+                                <a href="#" class="btn-outline-dark btn-lg btn-block mx-auto">Купить</a>
+                            </div>
                         </div>
-                        <h3><a href="#">product 1</a></h3>
-                        <div class="stars">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                        </div>
-                        <p>$100 USD</p>
-                        <div>
-                            <a href="#" class="btn btn-cart">Добавить в <i class="bx bx-cart-alt"></i></a>
-                        </div>
-                    </div>
+                    </a>
                 </div>
-
-                <div class="col-lg-3 col-md-5">
-                    <div class="product">
-                        <div class="product-img">
-                            <img src="assets/img/products/product3.jpg" alt="product 2" class="img-fluid">
+                <div class="col-lg-3 col-sm-5 d-flex align-items-stretch mb-4">
+                    <a href="#">
+                        <div class="card">
+                            <div class="card-img-overlay d-flex justify-content-end">
+                                <a href="#" class="card-link like">
+                                    <i class="bx bx-heart"></i>
+                                </a>
+                            </div>
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="card-img-top" src="assets/img/products/prod2.jpg" alt="Card image cap">
+                                <img class="uk-transition-fade uk-position-cover"
+                                     src="assets/img/products/prod2-2.jpg" alt="">
+                                <span class="tag">NEW</span>
+                            </div>
+                            <div class="card-header bg-transparent border-bottom-0 float-left">
+                                <h5 class="card-title">Sit sint consectetur velit quisquam velit quisquam</h5>
+                            </div>
+                            <span class="price">$460</span>
+                            <a href="#" class="buy text-end"><i class='bx bx-plus'></i>Добавить в корзину</a>
                         </div>
-                        <h3><a href="#">product 2</a></h3>
-                        <div class="stars">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star-half'></i>
-                        </div>
-                        <p>$180 USD</p>
-                    </div>
+                    </a>
                 </div>
-
-                <div class="col-lg-3 col-md-5">
-                    <div class="product">
-                        <div class="product-img">
-                            <img src="assets/img/products/product4.jpg" alt="product 3" class="img-fluid">
+                <div class="col-lg-3 col-sm-5 d-flex align-items-stretch mb-4">
+                    <a href="#">
+                        <div class="card">
+                            <div class="card-img-overlay d-flex justify-content-end">
+                                <a href="#" class="card-link like">
+                                    <i class="bx bx-heart"></i>
+                                </a>
+                            </div>
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="card-img-top" src="assets/img/products/prod3.jpg" alt="Card image cap">
+                                <img class="uk-transition-scale-up uk-position-cover"
+                                     src="assets/img/products/prod3-2.jpg" alt="">
+                            </div>
+                            <div class="card-header bg-transparent border-bottom-0 float-left" style="width: 70%">
+                                <h5 class="card-title text-center">Sit sint consectetur velit quisquam velit
+                                    quisquam</h5>
+                            </div>
+                            <div class="card-body ">
+                                <p class="card-text">$460</p>
+                            </div>
+                            <div class="text-end">
+                                <a href="#" class="btn-outline-dark btn-lg btn-block mx-auto">Купить</a>
+                            </div>
                         </div>
-                        <h3><a href="#">product 3</a></h3>
-                        <div class="stars">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bx-star'></i>
-                            <i class='bx bx-star'></i>
-                        </div>
-                        <p>$140 USD</p>
-                    </div>
+                    </a>
                 </div>
+                <div class="col-lg-3 col-sm-5 d-flex align-items-stretch mb-4">
+                    <a href="#">
+                        <div class="card">
+                            <div class="card-img-overlay d-flex justify-content-end">
+                                <a href="#" class="card-link like">
+                                    <i class="bx bx-heart"></i>
+                                </a>
+                            </div>
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="card-img-top" src="assets/img/products/prod5.jpg" alt="Card image cap">
+                                <img class="uk-transition-scale-up uk-position-cover"
+                                     src="assets/img/products/prod5-2.jpg" alt="">
+                            </div>
 
-                <div class="col-lg-3 col-md-5">
-                    <div class="product">
-                        <div class="product-img">
-                            <img src="assets/img/products/product4.jpg" alt="product 3" class="img-fluid">
+                            <div class="card-header bg-transparent border-bottom-0 float-left" style="width: 70%">
+                                <h5 class="card-title">Sit sint consectetur velit quisquam velit quisquam</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">$460</p>
+                            </div>
+                            <a href="#" class="card-link"><i class="bx bx-cart-alt"></i></a>
                         </div>
-                        <h3><a href="#">product 3</a></h3>
-                        <div class="stars">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bx-star'></i>
-                            <i class='bx bx-star'></i>
-                        </div>
-                        <p>$140 USD</p>
-                    </div>
+                    </a>
                 </div>
+                <div class="col-lg-3 col-sm-5 d-flex align-items-stretch mb-4">
+                    <a href="#">
+                        <div class="card">
+                            <div class="card-img-overlay d-flex justify-content-end">
+                                <a href="#" class="card-link like">
+                                    <i class="bx bx-heart"></i>
+                                </a>
+                            </div>
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="card-img-top" src="assets/img/products/prod7.jpg" alt="Card image cap">
+                                <img class="uk-transition-scale-up uk-position-cover"
+                                     src="assets/img/products/prod7-2.jpg" alt="">
+                            </div>
 
-                <div class="col-lg-3 col-md-5">
-                    <div class="product">
-                        <div class="product-img">
-                            <img src="assets/img/products/product4.jpg" alt="product 3" class="img-fluid">
+                            <div class="card-header bg-transparent border-bottom-0 float-left" style="width: 70%">
+                                <h5 class="card-title">Sit sint consectetur velit quisquam velit quisquam</h5>
+                            </div>
+                            <div class="card-body float-left">
+                                <p class="card-text">$460</p>
+                            </div>
+                            <div class="float-right">
+                                <a href="#" class="btn-outline-dark btn-lg btn-block mx-auto">Купить</a>
+                            </div>
                         </div>
-                        <h3><a href="#">product 3</a></h3>
-                        <div class="stars">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bx-star'></i>
-                            <i class='bx bx-star'></i>
-                        </div>
-                        <p>$140 USD</p>
-                    </div>
+                    </a>
                 </div>
+                <div class="col-lg-3 col-sm-5 d-flex align-items-stretch mb-4">
+                    <a href="#">
+                        <div class="card">
+                            <div class="card-img-overlay d-flex justify-content-end">
+                                <a href="#" class="card-link like">
+                                    <i class="bx bx-heart"></i>
+                                </a>
+                            </div>
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img class="card-img-top" src="assets/img/products/prod6.jpg" alt="Card image cap">
+                                <img class="uk-transition-scale-up uk-position-cover"
+                                     src="assets/img/products/prod6-2.jpg" alt="">
+                            </div>
 
-                <div class="col-lg-3 col-md-5">
-                    <div class="product">
-                        <div class="product-img">
-                            <img src="assets/img/products/product4.jpg" alt="product 3" class="img-fluid">
+                            <div class="card-header bg-transparent border-bottom-0 float-left" style="width: 70%">
+                                <h5 class="card-title">Sit sint consectetur velit quisquam velit quisquam</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">$460</p>
+                            </div>
+                            <a href="#" class="card-link"><i class="bx bx-cart-alt"></i></a>
                         </div>
-                        <h3><a href="#">product 3</a></h3>
-                        <div class="stars">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bx-star'></i>
-                            <i class='bx bx-star'></i>
-                        </div>
-                        <p>$140 USD</p>
-                    </div>
+                    </a>
                 </div>
-
-                <div class="col-lg-3 col-md-5">
-                    <div class="product">
-                        <div class="product-img">
-                            <img src="assets/img/products/product4.jpg" alt="product 3" class="img-fluid">
-                        </div>
-                        <h3><a href="#">product 3</a></h3>
-                        <div class="stars">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bx-star'></i>
-                            <i class='bx bx-star'></i>
-                        </div>
-                        <p>$140 USD</p>
-                    </div>
-                </div>
-
             </div>
-
         </div>
     </section><!-- End products Section -->
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Услуги</h2>
+                <p>Мы гарантируем</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-timeline" data-aos="fade-left">
+                        <a href="#" class="timeline" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="timeline-icon"><i class="bx bx-globe"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title">Dorime interimo</h3>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus
+                                    officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="timeline" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="timeline-icon"><i class="bx bx-rocket"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title">Lorem ipsum</h3>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus
+                                    officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="timeline" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="timeline-icon"><i class="bx bx-briefcase"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title">Dolor sit</h3>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus
+                                    officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="timeline" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="timeline-icon"><i class="bx bx-mobile"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title">Amet consectetur</h3>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus
+                                    officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section><!-- End Services Section -->
 
 
     <!-- ======= Subscribe Section ======= -->
@@ -402,53 +472,30 @@
 <!-- ======= Footer ======= -->
 <footer id="footer">
 
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-3 col-md-6 footer-contact">
-                    <h3>LASFERA</h3>
-                    <p>
-                        A108 Adam Street <br>
-                        New York, NY 535022<br>
-                        United States <br><br>
-                        <strong>Phone:</strong> +1 5589 55488 55<br>
-                        <strong>Email:</strong> info@example.com<br>
-                    </p>
-                </div>
-
-                <div class="col-lg-2 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-4 col-md-6 footer-newsletter">
-                    <h4>Join Our Newsletter</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                    <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
-                    </form>
-                </div>
-
-            </div>
+    <div class="footer-top d-flex">
+        <div class="col-lg-3 col-md-6 footer-contact">
+            <img src="assets/img/logotip.png" alt="">
+            <p>
+                Asddfghk hkljll <br>
+                Tashkent, 45453132<br>
+                Uzbekistan<br><br>
+            </p>
         </div>
+
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Магазин</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Политика конфиденциальности</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Связь</a>
+            </li>
+        </ul>
     </div>
 
     <div class="container d-md-flex py-4">
@@ -470,6 +517,8 @@
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class='bx bx-up-arrow-alt'></i></a>
 
 <!-- Vendor JS Files -->
+<script src="assets/js/uikit.min.js"></script>
+<script src="assets/js/uikit-icons.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="assets/js/glightbox.min.js"></script>

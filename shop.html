@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>LASFERA</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/uikit.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="assets/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+        <a href="index.html" class="logo"><img src="assets/img/logotip.png" alt="" class="img-fluid"></a>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                <li><a class="active " href="#">Главное</a></li>
+                <li class="dropdown"><a href="#"><span>Люстры</span> <i class='bx bx-chevron-down'></i></a>
+                    <ul>
+                        <li><a href="#">Классические</a></li>
+                        <li><a href="#">Неоклассика</a></li>
+                        <li><a href="#">HI-TECH</a></li>
+                        <li><a href="#">Модерн</a></li>
+                        <li><a href="#">Лофт</a></li>
+                        <li><a href="#">Марокканские</a></li>
+                        <!--                        dropdown-->
+                        <li><a>Галогенные</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Обои</a></li>
+                <li class="dropdown"><a href="#"><span>Стройматериалы</span> <i class='bx bx-chevron-down'></i></a>
+                    <ul>
+                        <li><a href="#">Сантехника</a></li>
+                        <li><a href="#">Двери</a></li>
+                        <li><a href="#">Полы</a></li>
+                        <li><a href="#">Строительное оборудование</a></li>
+                        <li><a href="#">Джакузи</a></li>
+                        <li><a href="#">Плитки</a></li>
+                        <li><a href="#">Черепицы</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <i class='bx bx-menu-alt-right mobile-nav-toggle'></i>
+        </nav><!-- .navbar -->
+
+        <!--        <div class="header-social-links">-->
+        <div class="nav-overlay uk-navbar-right">
+            <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade"
+               href="#"></a>
+        </div>
+
+        <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+            <div class="uk-navbar-item uk-width-expand">
+                <form class="uk-search uk-search-navbar uk-width-1-1">
+                    <input class="uk-search-input" type="search" placeholder="Search" autofocus>
+                </form>
+            </div>
+
+            <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade"
+               href="#"></a>
+        </div>
+        <span class="icons">
+        <a href="#" class="lang">
+             <div class="offcanvas__top__hover">
+                <span>RU <i class="arrow_carrot-down"></i></span>
+                <ul>
+                    <li>UZ</li>
+                </ul>
+            </div>
+        </a>
+        <a href="#" class="wishlist"><i class='bx bx-heart'></i></a>
+        <a href="#" class="cart"><i class='bx bx-shopping-bag'></i></a>
+        </span>
+    </div>
+
+</header>
+<!-- End Header -->
+
+<main id="main">
+
+    <section>
+        <div class="bg-image">
+            <div class="mask">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <h1 class="text-white mb-0">Все товары</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Shop</li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- End Breadcrumbs -->
+
+
+    <!--    Heading w/ filter   -->
+    <section id="products" class="products">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Товары</h2>
+                <p>купить онлайн</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="shop__sidebar">
+                        <div class="shop__sidebar__search">
+                            <form action="#">
+                                <input type="text" placeholder="Search...">
+                                <button type="submit"><span class="icon_search"></span></button>
+                            </form>
+                        </div>
+                        <div class="shop__sidebar__accordion">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseOne">Categories</a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__categories">
+                                                <ul class="nice-scroll">
+                                                    <li><a href="#">Men (20)</a></li>
+                                                    <li><a href="#">Women (20)</a></li>
+                                                    <li><a href="#">Bags (20)</a></li>
+                                                    <li><a href="#">Clothing (20)</a></li>
+                                                    <li><a href="#">Shoes (20)</a></li>
+                                                    <li><a href="#">Accessories (20)</a></li>
+                                                    <li><a href="#">Kids (20)</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseTwo">Branding</a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__brand">
+                                                <ul>
+                                                    <li><a href="#">Louis Vuitton</a></li>
+                                                    <li><a href="#">Chanel</a></li>
+                                                    <li><a href="#">Hermes</a></li>
+                                                    <li><a href="#">Gucci</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseThree">Filter Price</a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__price">
+                                                <ul>
+                                                    <li><a href="#">$0.00 - $50.00</a></li>
+                                                    <li><a href="#">$50.00 - $100.00</a></li>
+                                                    <li><a href="#">$100.00 - $150.00</a></li>
+                                                    <li><a href="#">$150.00 - $200.00</a></li>
+                                                    <li><a href="#">$200.00 - $250.00</a></li>
+                                                    <li><a href="#">250.00+</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseFour">Size</a>
+                                    </div>
+                                    <div id="collapseFour" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__size">
+                                                <label for="xs">xs
+                                                    <input type="radio" id="xs">
+                                                </label>
+                                                <label for="sm">s
+                                                    <input type="radio" id="sm">
+                                                </label>
+                                                <label for="md">m
+                                                    <input type="radio" id="md">
+                                                </label>
+                                                <label for="xl">xl
+                                                    <input type="radio" id="xl">
+                                                </label>
+                                                <label for="2xl">2xl
+                                                    <input type="radio" id="2xl">
+                                                </label>
+                                                <label for="xxl">xxl
+                                                    <input type="radio" id="xxl">
+                                                </label>
+                                                <label for="3xl">3xl
+                                                    <input type="radio" id="3xl">
+                                                </label>
+                                                <label for="4xl">4xl
+                                                    <input type="radio" id="4xl">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseFive">Colors</a>
+                                    </div>
+                                    <div id="collapseFive" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__color">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseSix">Tags</a>
+                                    </div>
+                                    <div id="collapseSix" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__tags">
+                                                <a href="#">Product</a>
+                                                <a href="#">Bags</a>
+                                                <a href="#">Shoes</a>
+                                                <a href="#">Fashion</a>
+                                                <a href="#">Clothing</a>
+                                                <a href="#">Hats</a>
+                                                <a href="#">Accessories</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="shop__product__option">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="shop__product__option__left">
+                                    <p>Showing 1–12 of 126 results</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="shop__product__option__right">
+                                    <p>Sort by Price:</p>
+                                    <select>
+                                        <option value="">Low To High</option>
+                                        <option value="">$0 - $55</option>
+                                        <option value="">$55 - $100</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <!--                        <div class="col-lg-4 col-md-6 col-sm-6">-->
+                        <div class="col-lg-4 col-sm-6 d-flex align-items-stretch mb-4">
+                            <a href="#">
+                                <div class="card">
+                                    <div class="card-img-overlay d-flex justify-content-end">
+                                        <a href="#" class="card-link like">
+                                            <i class="bx bx-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                        <img class="card-img-top" src="assets/img/products/prod1.jpg"
+                                             alt="Card image cap">
+                                        <img class="uk-transition-scale-up uk-position-cover"
+                                             src="assets/img/products/prod1-2.jpg" alt="">
+                                    </div>
+                                    <div class="card-header bg-transparent border-bottom-0 float-left"
+                                         style="width: 70%">
+                                        <h5 class="card-title">Sit sint consectetur velit quisquam velit
+                                            quisquam</h5>
+                                    </div>
+                                    <div class="card-body float-left">
+                                        <p class="card-text">$460</p>
+                                    </div>
+                                    <div class="float-right">
+                                        <a href="#" class="btn-outline-dark btn-lg btn-block mx-auto">Купить</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 d-flex align-items-stretch mb-4">
+                            <a href="#">
+                                <div class="card">
+                                    <div class="card-img-overlay d-flex justify-content-end">
+                                        <a href="#" class="card-link like">
+                                            <i class="bx bx-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                        <img class="card-img-top" src="assets/img/products/prod2.jpg"
+                                             alt="Card image cap">
+                                        <img class="uk-transition-fade uk-position-cover"
+                                             src="assets/img/products/prod2-2.jpg" alt="">
+                                        <span class="tag">NEW</span>
+                                    </div>
+                                    <div class="card-header bg-transparent border-bottom-0 float-left">
+                                        <h5 class="card-title">Sit sint consectetur velit quisquam velit
+                                            quisquam</h5>
+                                    </div>
+                                    <span class="price">$460</span>
+                                    <a href="#" class="buy text-end"><i class='bx bx-plus'></i>Добавить в
+                                        корзину</a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 d-flex align-items-stretch mb-4">
+                            <a href="#">
+                                <div class="card">
+                                    <div class="card-img-overlay d-flex justify-content-end">
+                                        <a href="#" class="card-link like">
+                                            <i class="bx bx-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                        <img class="card-img-top" src="assets/img/products/prod3.jpg"
+                                             alt="Card image cap">
+                                        <img class="uk-transition-scale-up uk-position-cover"
+                                             src="assets/img/products/prod3-2.jpg" alt="">
+                                    </div>
+                                    <div class="card-header bg-transparent border-bottom-0 float-left"
+                                         style="width: 70%">
+                                        <h5 class="card-title text-center">Sit sint consectetur velit quisquam velit
+                                            quisquam</h5>
+                                    </div>
+                                    <div class="card-body ">
+                                        <p class="card-text">$460</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <a href="#" class="btn-outline-dark btn-lg btn-block mx-auto">Купить</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 d-flex align-items-stretch mb-4">
+                            <a href="#">
+                                <div class="card">
+                                    <div class="card-img-overlay d-flex justify-content-end">
+                                        <a href="#" class="card-link like">
+                                            <i class="bx bx-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                        <img class="card-img-top" src="assets/img/products/prod5.jpg"
+                                             alt="Card image cap">
+                                        <img class="uk-transition-scale-up uk-position-cover"
+                                             src="assets/img/products/prod5-2.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-header bg-transparent border-bottom-0 float-left"
+                                         style="width: 70%">
+                                        <h5 class="card-title">Sit sint consectetur velit quisquam velit
+                                            quisquam</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">$460</p>
+                                    </div>
+                                    <a href="#" class="card-link"><i class="bx bx-cart-alt"></i></a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 d-flex align-items-stretch mb-4">
+                            <a href="#">
+                                <div class="card">
+                                    <div class="card-img-overlay d-flex justify-content-end">
+                                        <a href="#" class="card-link like">
+                                            <i class="bx bx-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                        <img class="card-img-top" src="assets/img/products/prod7.jpg"
+                                             alt="Card image cap">
+                                        <img class="uk-transition-scale-up uk-position-cover"
+                                             src="assets/img/products/prod7-2.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-header bg-transparent border-bottom-0 float-left"
+                                         style="width: 70%">
+                                        <h5 class="card-title">Sit sint consectetur velit quisquam velit
+                                            quisquam</h5>
+                                    </div>
+                                    <div class="card-body float-left">
+                                        <p class="card-text">$460</p>
+                                    </div>
+                                    <div class="float-right">
+                                        <a href="#" class="btn-outline-dark btn-lg btn-block mx-auto">Купить</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 d-flex align-items-stretch mb-4">
+                            <a href="#">
+                                <div class="card">
+                                    <div class="card-img-overlay d-flex justify-content-end">
+                                        <a href="#" class="card-link like">
+                                            <i class="bx bx-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                        <img class="card-img-top" src="assets/img/products/prod6.jpg"
+                                             alt="Card image cap">
+                                        <img class="uk-transition-scale-up uk-position-cover"
+                                             src="assets/img/products/prod6-2.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-header bg-transparent border-bottom-0 float-left"
+                                         style="width: 70%">
+                                        <h5 class="card-title">Sit sint consectetur velit quisquam velit
+                                            quisquam</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">$460</p>
+                                    </div>
+                                    <a href="#" class="card-link"><i class="bx bx-cart-alt"></i></a>
+                                </div>
+                            </a>
+                        </div>
+                        <!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+    <div class="footer-top d-flex">
+        <div class="col-lg-3 col-md-6 footer-contact">
+            <img src="assets/img/logotip.png" alt="">
+            <p>
+                Asddfghk hkljll <br>
+                Tashkent, 45453132<br>
+                Uzbekistan<br><br>
+            </p>
+        </div>
+
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Магазин</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Политика конфиденциальности</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Связь</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+        <div class="me-md-auto text-center text-md-start">
+            <div class="copyright">
+                &copy; Copyright <strong><span>LASFERA</span></strong>. All Rights Reserved
+            </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+            <a href="#" class="telegram"><i class='bx bxl-telegram'></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class='bx bx-up-arrow-alt'></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/js/uikit.min.js"></script>
+<script src="assets/js/uikit-icons.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/glightbox.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/purecounter.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/noframework.waypoints.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+
+</html>
