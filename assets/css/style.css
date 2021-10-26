@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .icons a {
-    color: #6f6f6f;
+    color: #111111;
     padding-left: 6px;
     display: inline-block;
     line-height: 0;
@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
     font-size: 15px;
     font-weight: 600;
-    color: #888888;
+    color: #111111;
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -184,7 +184,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-    color: #222222;
+    color: #888888;
 }
 
 .navbar .dropdown ul {
@@ -644,50 +644,9 @@ section {
 /*--------------------------------------------------------------
 # products Section
 --------------------------------------------------------------*/
-#products .body.add-to-cart {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
 .like {
     font-size: 1.5rem;
-    z-index: 997;
-}
-
-/*#products a.buy {*/
-/*    border: #2c3034 1px solid;*/
-/*    padding: 5px 8px;*/
-/*    color: #2c3034;*/
-/*    cursor: pointer;*/
-/*    font-size: 18px;*/
-/*}*/
-
-#products a.buy {
-    margin: 0 auto;
-    margin-bottom: 10px;
-    position: relative;
-    display: inline;
-    padding: 5px 20px;
-    text-align: center;
-    cursor: pointer;
-    color: #2c3432;
-    border: #2c3432 1px solid;
-    transition: .3s ease-in-out;
-}
-
-
-#products a.buy:hover {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    border: #666F6D 1px solid;
-    transition: .3s ease-in-out;
-    color: #fff6ee;
-    background-color: #2c3234;
+    z-index: 3;
 }
 
 #products .tag {
@@ -709,10 +668,12 @@ section {
 
 .card-header h5 {
     width: 100%;
+    font-size: 16px;
 }
 
 span.price {
     font-weight: 500;
+    margin-top: 0;
 }
 
 /*.like:hover {*/
@@ -1259,12 +1220,14 @@ a {
     }
 }
 
-/*=========================================================
+/*========================================================================================================================
 ---------------S H O P  P A G E ------------------
-===================================================================*/
+==========================================================================================================================*/
 .bg-image {
-    background: url('../img/shop.jpg');
-    height: 50vh;
+    background: url('../img/shop.jpg') no-repeat center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
 }
 
 .mask {
@@ -2037,9 +2000,9 @@ shop__sidebar {
 }
 
 
-/*
+/*======================================================================================================================
     СONTACT PAGE
- */
+ =====================================================================================================================*/
 
 .bg-image.contact {
     background: url("../img/banner.jpg");
